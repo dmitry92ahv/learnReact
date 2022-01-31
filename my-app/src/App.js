@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import ClassCounter from "./components/ClassCounter";
 import Counter from "./components/Counter";
+import PostItem from "./components/PostItem";
+import "./styles/App.css";
 
 function App() {
 
@@ -11,20 +13,20 @@ function App() {
   return (
     <div className="App">
 
-        <h1>{value}</h1>
+        <h4>{value}</h4>
         <input value={value} 
           onChange={event => setValue(event.target.value)}
         ></input>
 
         <Counter/>
 
-        <Counter/>
-
-        <Counter/>
-
         <ClassCounter/>
 
+        <PostItem/>
+        <PostItem/>
     </div>
+
+
   );
 }
 
