@@ -19,11 +19,12 @@ function App() {
         ></input>
 
         <Counter/>
-
         <ClassCounter/>
 
-        <PostItem/>
-        <PostItem/>
+ 
+        <PostItem post = {{id: 1, title: 'Javascript', body: 'Description'}}/>
+        <PostItem post = {{id: 2, title: 'Test', body: 'Description tests'}}/>
+        <PostItem post = {{id: 3, title: 'Hi', body: 'How are u?'}}/>
     </div>
 
 
